@@ -5115,6 +5115,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Resources/MachOKit-Info.plist";
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Debug;
 		};
@@ -5134,6 +5135,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Resources/MachOKit-Info.plist";
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Release;
 		};
