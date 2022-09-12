@@ -26,6 +26,7 @@ git clone --recursive https://github.com/DeVaukz/MachO-Kit
 
 ### Installation
 
+#### Manual
 1. Clone the Mach-O repository into your application's repository.
 ```
 cd MyGreatApp;
@@ -34,6 +35,11 @@ git clone --recursive https://github.com/DeVaukz/MachO-Kit
 2. Drag and drop MachOKit.xcodeproj into your application’s Xcode project or workspace.
 3. On the “General” tab of your application target’s settings, add MachOKit.framework to the “Embedded Binaries” section.
 
+#### Carthage
+
+```
+github "wendyliga/MachO-Kit" "master"
+```
 ### Using Mach-O Kit
 
 Before Mach-O Kit can begin parsing a file, you must first create an `MKMemoryMap` for the file.  The memory map is used by the rest of Mach-O Kit to safely read the file's contents.  An `MKMemoryMap` can instead be instantiated with a task port for parsing a Mach-O image loaded in a process that you posses the task port for.
