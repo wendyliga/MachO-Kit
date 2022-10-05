@@ -112,6 +112,7 @@
         case MH_DYLIB:
         case MH_DYLINKER:
         case MH_BUNDLE:
+        case MH_DSYM:
             break;
         default:
             MK_ERROR_OUT = [NSError mk_errorWithDomain:MKErrorDomain code:MK_EINVALID_DATA description:@"Unsupported file type: %" PRIx32 ".", _header.filetype];
